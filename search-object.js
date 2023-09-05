@@ -21,7 +21,7 @@ function containsRecursive(object, value) {
     if (object[key] === value) {
       return true;
     } else {
-      return contains(object[key], value);
+      return containsRecursive(object[key], value);
     }
   }
 
@@ -43,7 +43,7 @@ function contains(obj, value) {
   return false;
 }
 
-containsRecursive(nestedObject, 44); // true
-containsRecursive(nestedObject, "foo"); // false
-contains(nestedObject, 44); // true
-contains(nestedObject, "foo"); // false
+console.log(containsRecursive(nestedObject, 44)); // true
+console.log(containsRecursive(nestedObject, "foo")); // false
+console.log(contains(nestedObject, 44)); // true
+console.log(contains(nestedObject, "foo")); // false

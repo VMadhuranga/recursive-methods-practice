@@ -64,7 +64,7 @@ console.log(SumSquaresRecursive(r)); // 1 = 1
 r = [10, [[10], 10], [10]];
 console.log(SumSquaresRecursive(r)); // 100 + 100 + 100 + 100 = 400
 
-const l = [1, 2, 3];
+let l = [1, 2, 3];
 console.log(SumSquares(l)); // 14
 
 l = [[1, 2], 3];
